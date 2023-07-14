@@ -9,6 +9,8 @@ module Ckeditor
       require 'ckeditor-rails/engine3'
     when /^3\.[0]/
       require 'ckeditor-rails/railtie'
+    else
+      require 'ckeditor-rails/engine'
     end
   end
 end
